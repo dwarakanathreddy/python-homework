@@ -1,5 +1,5 @@
 # 🐍 Python Learning Assignments — Django Edition
-
+-----------
 ## 📋 Overview
 This project contains 13 beginner Python assignments built with Django.
 Each assignment teaches a core Python concept. You write the logic,
