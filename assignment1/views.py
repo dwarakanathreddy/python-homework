@@ -12,13 +12,19 @@ def index(request):
         operation = request.POST.get('operation', '')
 
         # ── STUDENT CODE START ──────────────────────────
-        # TASK: Convert inputs to floats and perform the operation
-        # - If operation is 'Add': number1 + number2
-        # - If operation is 'Subtract': number1 - number2
-        # - If operation is 'Multiply': number1 * number2
-        # - If operation is 'Divide': number1 / number2 (handle division by zero)
-        # Store the final answer in `result`
-        pass  # ← Remove this line when you write your code
+        number1 = float(number1)
+        number2 = float(number2)
+        if operation == "Add":
+            result = number1 + number2
+        elif operation == "Subtract":
+            result = number1 - number2
+        elif operation == "Multiply":
+            result = number2 * number1
+        elif operation == "Divide":
+            if number2 == 0:
+                results = "Cannot divide by zero"
+            else:
+                result = number1/number2
         # ── STUDENT CODE END ────────────────────────────
 
     context = {
